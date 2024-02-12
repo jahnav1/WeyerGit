@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="729.2,941.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:Insert_Image_Excel_Windows;assembly=Insert.Image.Excel.Windows" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="390,821" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:Insert_Image_Excel_Windows;assembly=Insert.Image.Excel.Windows" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -70,29 +70,19 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,876" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,756" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Hi&quot;]" />
-    <uix:NTakeScreenshot DisplayName="Take Screenshot '‪Book1‬ - Excel'" FileName="C:\Users\BawaG\Documents\screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="388,237.2" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
+    <uix:NTakeScreenshot DisplayName="Take Screenshot '‪Book1‬ - Excel'" FileName="C:\Users\BawaG\Documents\screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="338,242" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3">
       <uix:NTakeScreenshot.Target>
         <uix:TargetAnchorable DesignTimeRectangle="303, 8, 489, 34" DesignTimeScaleFactor="1" FriendlyName="'‪Book1‬ - Excel'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOfficeCaption' name='‪Book1‬  -  Excel' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOfficeCaption' name='‪Book1‬  -  Excel' role='Title Bar' automationid='' check:fulltext='‪Book1‬  -  Excel' /&gt;" Guid="037482cc-d196-4fd6-b126-d5eef97ed451" InformativeScreenshot="39c6ba1d7f15d698bf814fd59de52ca8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='Book1 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
       </uix:NTakeScreenshot.Target>
     </uix:NTakeScreenshot>
-    <i:Insert_Image_Excel_Sequence DisplayName="Insert Image Excel Sequence" sap:VirtualizedContainerService.HintSize="388,353.2" sap2010:WorkflowViewState.IdRef="Insert_Image_Excel_Sequence_1" In_Excel_Scope="C:\Users\BawaG\OneDrive - Weyerhaeuser\Documents\WB1.xlsx" In_Insert_Cell="A1" In_Insert_File="C:\Users\BawaG\Documents\screenshot.png" In_Insert_Height="550" In_Insert_Sheet="Sheet1" In_Insert_Width="900" />
+    <i:Insert_Image_Excel_Sequence DisplayName="Insert.Image.Excel.Sequence" sap:VirtualizedContainerService.HintSize="338,352" sap2010:WorkflowViewState.IdRef="Insert_Image_Excel_Sequence_1" In_Excel_Scope="C:\Users\BawaG\OneDrive - Weyerhaeuser\Documents\WB1.xlsx" In_Insert_Cell="A1" In_Insert_File="C:\Users\BawaG\Documents\screenshot.png" In_Insert_Height="550" In_Insert_Sheet="Sheet1" In_Insert_Width="900" />
   </Sequence>
 </Activity>

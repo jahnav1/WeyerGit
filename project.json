@@ -1,10 +1,10 @@
 {
   "name": "TestInsertimageWindows",
-  "projectId": "e8ef7d49-456a-410d-a6f2-cbe718516a0b",
+  "projectId": "9a02d89f-74b0-4b23-8742-13cba57461bc",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "Insert.Image.Excel.Windows": "[1.0.3]",
+    "Insert.Image.Excel.Windows": "[1.0.1]",
     "UiPath.Excel.Activities": "[2.16.0]",
     "UiPath.Mail.Activities": "[1.18.1]",
     "UiPath.System.Activities": "[22.10.3]",
